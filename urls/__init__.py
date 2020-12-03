@@ -1,8 +1,9 @@
 from django.urls import path
 from django.conf.urls import include
 
-from views.templates import TemplateView
+import views
 
 urlpatterns = [
-    path('templates/<str:login>/<slug:slug>', TemplateView.as_view()),
+    path('templates/', include('urls.templates.urls')),
+    path('', views.IndexView.as_view()),
 ]

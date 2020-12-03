@@ -1,2 +1,4 @@
 django.contrib.auth
 django.contrib.contenttypes
+
+django_github_oauth
